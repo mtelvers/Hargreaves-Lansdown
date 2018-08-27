@@ -38,6 +38,7 @@ for ($f = 1388; $f -lt $funds.count; $f++) {
 	$fundSize = $html.Substring($x1, $x2 - $x1).trim()
 	$fundSize = $fundSize -replace "&pound;", "GBP "
 	$fundSize = $fundSize -replace "&euro;", "EUR "
+	$fundSize = $fundSize -replace "&yen;", "YEN "
 	$fundSize = $fundSize -replace "\$", "USD "
 
 	$x1 = $html.IndexOf('<table class="factsheet-table" summary="Top 10 holdings"')
